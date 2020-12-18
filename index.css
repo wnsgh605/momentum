@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(21, 46, 68);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.clock h1 {
+  color: aliceblue;
+  font-size: 100px;
+}
+.toDoList {
+  color: aliceblue;
+  padding: 0;
+}
+.showing {
+  display: inline;
+}
+.gone {
+  display: none;
+}
+.greeting {
+  font-size: 50px;
+  display: inline;
+  color: aliceblue;
+  margin: 0px 10px 10px 0px;
+}
+.reset {
+  display: inline;
+}
+.form {
+  display: inline;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  animation: fadeIn 0.5s linear;
+}
+.weather {
+  position: absolute;
+  color: aliceblue;
+  top: 30px;
+  right: 30px;
+}
+.name-box {
+  display: flex;
+  align-items: center;
+}
+.toDoForm {
+  margin-top: 50px;
+}
+.weather-box {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.toDoList button {
+  margin-left: 50px;
+}
+.toDoList li {
+  display: flex;
+  justify-content: space-between;
+}
