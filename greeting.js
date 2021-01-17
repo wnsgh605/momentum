@@ -36,7 +36,7 @@ function paintGreeting(text) {
   form.classList.add(GONE_CN);
   form.classList.remove(FORM_CN);
   greeting.classList.add(SHOWING_CN);
-  greeting.innerText = `Hello ${text}`;
+  greeting.innerText = `Hello, ${text}`;
 }
 function loadName() {
   const currentUser = localStorage.getItem(USER_LS);

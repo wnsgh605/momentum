@@ -1,4 +1,5 @@
 body {
+  user-select: none;
   margin: 0;
   height: 100vh;
   background-color: rgb(21, 46, 68);
@@ -9,7 +10,9 @@ body {
 }
 .clock h1 {
   color: aliceblue;
-  font-size: 100px;
+  font-size: 150px;
+  margin: 0;
+  margin-top: 150px;
 }
 .toDoList {
   color: aliceblue;
@@ -25,13 +28,29 @@ body {
   font-size: 50px;
   display: inline;
   color: aliceblue;
-  margin: 0px 10px 10px 0px;
+  margin: 0px 10px 10px 50px;
+}
+.name-box:hover .reset {
+  visibility: visible;
 }
 .reset {
   display: inline;
+  visibility: hidden;
+}
+.reset button {
+  all: unset;
+  color: rgba(255, 255, 255, 0.7);
 }
 .form {
   display: inline;
+}
+.form input {
+  all: unset;
+  border-bottom: 2px solid white;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: white;
 }
 @keyframes fadeIn {
   from {
@@ -61,7 +80,16 @@ body {
   align-items: center;
 }
 .toDoForm {
-  margin-top: 50px;
+  margin-top: 30px;
+  width: 50vw;
+}
+.toDoForm input {
+  all: unset;
+  border-bottom: 2px solid white;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: white;
 }
 .weather-box {
   position: absolute;
@@ -69,10 +97,22 @@ body {
   height: 100vh;
   z-index: -1;
 }
+.temp {
+  font-size: 20px;
+}
+.loca {
+  text-align: end;
+}
 .toDoList button {
+  all: unset;
   margin-left: 50px;
+  visibility: hidden;
 }
 .toDoList li {
   display: flex;
   justify-content: space-between;
+  margin-left: 50px;
+}
+.toDoList li:hover button {
+  visibility: visible;
 }
